@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f6ff; /* soft blue background */
+  color: #222;
+}
+
+.alumni-section {
+  background: #ffffff;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  border-top: 6px solid #004aad; /* deep blue accent */
+}
+
+.alumni-section h2 {
+  color: #004aad;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.alumni-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.alumni-section a {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.alumni-section a:hover {
+  text-decoration: underline;
+}
+
+.alumni-gallery {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.alumni-gallery img,
+.alumni-gallery iframe {
+  border-radius: 8px;
+  border: 2px solid #e1ebff;
+  background: #fff;
+  flex: 1 1 300px;
+  max-width: 300px;
+}

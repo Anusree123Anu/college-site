@@ -1,0 +1,86 @@
+/* *{
+    
+    margin: 0;
+    box-sizing: border-box;
+     padding: 20px;
+    
+    background-color: antiquewhite;
+}
+.h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+
+     
+    
+    
+    
+}
+.h4{
+  
+    font-size: 30px;
+     background-color: rgb(167, 131, 117);
+     color: aliceblue;
+     padding: 40px;
+     margin: 0;
+    
+    
+}
+.h5{
+    font-size: 22px;
+    background-color: rgb(167, 131, 117);
+    color: aliceblue;
+     padding: 15px;
+}
+.pa{
+    padding: 35px;
+    background-color: rgb(167, 131, 117);
+   height: fit-content;
+   font-size: 22px;
+   color: white;
+     
+  
+} */
+
+/* Basic page style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eaf1fc;   /* light blue background */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main content box */
+body > *{
+  background-color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.h3 {
+  text-align: center;
+  color: #0b3d91;      /* deep blue */
+  margin-bottom: 20px;
+}
+
+.h4 {
+  color: #0b3d91;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.h5 {
+  color: #0b3d91;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+.pa {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}

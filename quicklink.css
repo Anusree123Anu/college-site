@@ -1,0 +1,68 @@
+/* Reset and base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eaf2ff;       /* light bluish background */
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* Outer card container */
+.Maincontainer {
+    width: 85%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Each section block */
+.innercontainer {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 30px;
+}
+
+.innercontainer:last-child {
+    border-bottom: none;
+}
+
+/* Headings */
+.innercontainer h3 {
+    color: #0b3d91;            
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph text */
+.innercontainer p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Images: uniform size */
+.innercontainer img {
+    width: 330px;          /* same width for all */
+    height: 230px;         /* same height for all */
+     object-fit: cover;     /* crop to fill without stretching */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin: 10px;
+    display: inline-block; /* keep them side by side */
+    vertical-align: top;
+}
+
+/* For rows with 3 images (Arts section) you can tweak spacing if needed */
+.image3 {
+    width: 330px;
+    height: 230px;
+}

@@ -1,0 +1,50 @@
+/* Overall page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf2ff;      /* light-blue page background */
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Main white container */
+.Maincontainer {
+    background-color: #ffffff;
+    max-width: 900px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    line-height: 1.7;
+    border-top: 6px solid #004aad;
+}
+
+/* Section spacing */ 
+.innercontainer,
+.innercontainer2 {
+    margin-bottom: 30px;
+}
+
+/* Headings */
+.heading {
+    color: #003399;                /* deep blue like the reference */
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    /* border-bottom: 3px solid #003399; */
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+.paragraph {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Optional: make sub-heading (MISSION) slightly smaller */
+.innercontainer2 h2.heading {
+    font-size: 1.5rem;
+    margin-top: 25px;
+}

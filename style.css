@@ -1,0 +1,237 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: #f8fbff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ---------------- HEADER ---------------- */
+.info {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#Ass {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.title {
+  color: #004080;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.title h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0066cc;
+  margin-top: 5px;
+}
+
+#Acc {
+  height: 70px;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  background: #004080;
+  padding: 12px 30px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background: #0066cc;
+}
+
+/* ---------------- Vertical Dropdown ---------------- */
+.navbar ul li .drop-down-menu {
+  position: absolute;
+  top: 100%; /* appears just below parent */
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+  min-width: 220px;
+  z-index: 100;
+
+  /* hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.5s ease;
+  display: block;
+  /* flex-direction: column; vertical stack */
+  padding: 0;
+}
+
+.navbar ul li .drop-down-menu li {
+  width: 100%;
+}
+
+.navbar ul li .drop-down-menu li a {
+  color: #004080;
+  display: block;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li .drop-down-menu li:last-child a {
+  border-bottom: none;
+}
+
+.drop-down-menu li a:hover {
+  background: #eaf3ff;
+}
+
+/* Show dropdown vertically */
+.drop-down:hover .drop-down-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ---------------- BANNER ---------------- */
+.banner img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  border-bottom: 5px solid #004080;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.btn-collection {
+  background: linear-gradient(135deg, #0066cc, #004080);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 260px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-collection h1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn-collection:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* ---------------- PARAGRAPH CONTENT ---------------- */
+.container-dept {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.container-dept p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* ---------------- FOOTER ---------------- */
+.contact-address {
+  background-color: #002b5c;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-address .address,
+.contact-address .contact {
+  color: #fff;
+}
+
+.contact-address .address p,
+.contact-address .contact p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.contact-address i {
+  margin-right: 8px;
+  color: #00c3ff;
+}
+
+.contact-address .address {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-address .contact {
+  font-size: 18px;
+}
+
+.contact-address .contact p:first-child {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.clear {
+  clear: both;
+}
